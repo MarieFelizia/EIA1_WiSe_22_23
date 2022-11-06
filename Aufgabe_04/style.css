@@ -40,7 +40,6 @@ padding-top: 50px;
 position: absolute;
 }
 
-
 .footer{margin: 0; 
   height: 40%; 
   width: 100%;
@@ -99,29 +98,23 @@ position: absolute;
 }
 
 
-.container { 
-  
-}
-
-
-
 .Kontakt { margin-left: 600px;}
-
 
 
 input[type=text], select, textarea {
   width: 100%; 
-  padding: 12px;  
+  padding: 12px;   
   border: 1px solid #ccc; 
   border-radius: 4px; 
   box-sizing: border-box; 
   margin-top: 6px; 
   margin-bottom: 16px; 
-  resize: vertical
+  resize: vertical 
 }
- 
+
+
 input[type=submit] {
-  background-color: #04AA6D;
+  background-color: rgb(173, 173, 173);
   color: white;
   padding: 12px 20px;
   border: none;
@@ -129,13 +122,15 @@ input[type=submit] {
   cursor: pointer;
 }
 
+
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: grey;
 }
 
 
 .container {
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color: #eaeaea;
   padding: 20px;
+  margin-bottom: 50px;
 }
