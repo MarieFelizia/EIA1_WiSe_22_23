@@ -18,9 +18,8 @@ text-decoration: underline;
 a { color: grey;
 text-decoration: none;}
 
-
-
-
+#aktuell { color: black;
+text-decoration: underline;}
 
 
 .flex-container { 
@@ -81,5 +80,7 @@ position: absolute;
   height: 60px;
 }
 
-
-
+.Elemente { 
+  margin-left: 200px;
+  
+}
