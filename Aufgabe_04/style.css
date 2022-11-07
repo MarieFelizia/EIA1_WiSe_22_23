@@ -6,7 +6,9 @@ body {margin:0;
 
 
 .header{
-    background-image:
+    background-image: url(./HeaderBild.jpeg); 
+    width: 100%;
+    height: 400px;
     
   }
   
