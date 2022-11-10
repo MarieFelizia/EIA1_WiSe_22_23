@@ -109,6 +109,11 @@ margin-top: -200px;
   position: absolute;
 }
 
+.Foto:hover { 
+  transform: scale(130%);
+  transition-duration: 1.5s;
+}
+
 .AboutMe { 
   margin-left: 350px;
   margin-top: 200px;
