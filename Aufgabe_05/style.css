@@ -32,6 +32,7 @@ text-decoration: underline;}
   padding-right: 200px;
   margin-top: -100px;
   
+
 }
 
 .Logo { 
@@ -201,15 +202,6 @@ input[type=submit]:hover {
   80%{ transform: translateX(-300%);} 
 
   100%{ transform: translateX(-300%);} 
-
- 
-
-
-
-
-
-
-
 
 
  }
