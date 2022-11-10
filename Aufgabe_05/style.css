@@ -1,3 +1,6 @@
+@import url();
+
+
 body {margin:0; 
       font-family: Arial, Helvetica, sans-serif;
       font-size: 20px; 
@@ -81,7 +84,15 @@ margin-top: -200px;
 .socials { 
   width: 60px;
   height: 60px;
+
 }
+
+.socials:hover { 
+  -webkit-filter: grayscale(100%);
+  
+}
+
+
 
 .Elemente { 
  margin-left: 200px;
@@ -89,6 +100,10 @@ margin-top: -200px;
 
 }
 
+.ElementeBilder:hover { 
+  transform: scale(120%);
+  transition-duration: 1.5s;
+}
 .Foto { 
   margin-left: 600px;
   margin-bottom: 130px;
@@ -140,3 +155,4 @@ input[type=submit]:hover {
   padding: 20px;
   margin-bottom: 50px;
 }
+
