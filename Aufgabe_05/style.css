@@ -32,8 +32,6 @@ text-decoration: underline;}
   padding-right: 200px;
   margin-top: -100px;
   
- 
-  
 }
 
 .Logo { 
@@ -42,6 +40,7 @@ height: 100px;
 padding-left: 200px;
 padding-top: 0px;
 margin-top: -200px;
+
 
 }
 
@@ -90,11 +89,9 @@ margin-top: -200px;
   
 }
 
-
-
 .Elemente { 
  margin-left: 200px;
- margin-top: 200px;
+ margin-top: 600px;
 
 }
 
@@ -164,3 +161,55 @@ input[type=submit]:hover {
   top: 0; 
   right: 0; 
 }
+
+.slider-frame { 
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  translate: -50%;
+  top: 0;
+  left: 50%;
+  overflow: hidden;
+  
+  
+}
+
+.slide-images { 
+  width: 100%;
+  display: flex;
+  animation: slide 16s infinite; 
+
+}
+
+.img-container {
+  width: 100%;
+ }
+
+ @keyframes slide{ 
+  0%{ transform: translateX(0);} 
+
+  25%{ transform: translateX(0);} 
+
+  30%{ transform: translateX(-100%);} 
+
+  50%{ transform: translateX(-100%);} 
+
+  55%{ transform: translateX(-200%);} 
+
+  75%{ transform: translateX(-200%);} 
+
+  80%{ transform: translateX(-300%);} 
+
+  100%{ transform: translateX(-300%);} 
+
+ 
+
+
+
+
+
+
+
+
+
+ }
