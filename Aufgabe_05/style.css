@@ -154,3 +154,8 @@ input[type=submit]:hover {
   margin-bottom: 50px;
 }
 
+.Banner { 
+  position: absolute
+  top: 0
+  right: 0
+}
