@@ -24,23 +24,24 @@ text-decoration: underline;}
 
 
 .flex-container { 
+  position: absolute;
+  top: 40px;
+  right: 300px;
+  z-index: 2; 
   display: flex;
-  flex-direction: row;
-  justify-content: end;
-  justify-content: space-between;
-  padding-left: 800px;
-  padding-right: 200px;
-  margin-top: -100px;
   
-
 }
 
+
+
+
+
+
 .Logo { 
-width: 100px;
-height: 100px;
-padding-left: 200px;
-padding-top: 0px;
-margin-top: -200px;
+position: absolute;
+top: 40px;
+left: 80px;
+z-index: 2;
 
 
 }
@@ -93,6 +94,7 @@ margin-top: -200px;
 .Elemente { 
  margin-left: 200px;
  margin-top: 500px;
+ 
 
 }
 
@@ -161,6 +163,7 @@ input[type=submit]:hover {
   position: absolute;
   top: 0; 
   right: 0; 
+  z-index: 2;
 }
 
 .slider-frame { 
