@@ -29,13 +29,20 @@ text-decoration: underline;}
   right: 300px;
   z-index: 2; 
   display: flex;
-  
+
 }
 
+#links{
+  position: absolute; 
+  display: flex;
+  margin-left: -300px;
+}
 
-
-
-
+#mitte{
+  position: absolute; 
+  display: flex;
+  margin-left: -150px;
+}
 
 .Logo { 
 position: absolute;
