@@ -44,6 +44,7 @@ text-decoration: underline;}
   margin-left: -150px;
 }
 
+
 .Logo { 
 position: absolute;
 top: 40px;
@@ -100,7 +101,7 @@ z-index: 2;
 
 .Elemente { 
  margin-left: 200px;
- margin-top: 500px;
+ margin-top: 320px;
  
 
 }
@@ -123,7 +124,7 @@ z-index: 2;
 
 .AboutMe { 
   margin-left: 350px;
-  margin-top: 200px;
+  margin-top: 20px;
   margin-bottom: 100px;
 }
 
@@ -181,6 +182,7 @@ input[type=submit]:hover {
   top: 0;
   left: 50%;
   overflow: hidden;
+ 
   
   
 }
@@ -188,13 +190,13 @@ input[type=submit]:hover {
 .slide-images { 
   width: 100%;
   display: flex;
-  animation: slide 16s infinite; 
-
+  animation: slide 16s ease infinite; 
 }
 
 .img-container {
   width: 100%;
  }
+
 
  @keyframes slide{ 
   0%{ transform: translateX(0);} 
@@ -212,6 +214,5 @@ input[type=submit]:hover {
   80%{ transform: translateX(-300%);} 
 
   100%{ transform: translateX(-300%);} 
-
-
  }
+  
