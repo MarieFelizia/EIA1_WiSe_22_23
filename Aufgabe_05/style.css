@@ -36,14 +36,19 @@ text-decoration: underline;}
   position: absolute; 
   display: flex;
   margin-left: -300px;
+  z-index: 2;
 }
 
 #mitte{
   position: absolute; 
   display: flex;
   margin-left: -150px;
+  z-index: 2;
 }
 
+#rechts{ 
+  z-index: 2;
+}
 
 .Logo { 
 position: absolute;
