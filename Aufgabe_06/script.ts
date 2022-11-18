@@ -11,5 +11,22 @@ const FrPopulation2008 :number = 64.37;
 const SpPopulation2008 :number = 45.95; 
 
 
-console.log(EuPopulation2022 + " Mio")
-console.log()
+console.log(DePopulation2022 + " Mio")
+console.log(DePopulation2022 / EuPopulation2022 * 100 + " %")
+console.log((DePopulation2022 - DePopulation2008) / DePopulation2008 * 100 + " %")
+console.log(DePopulation2022 - DePopulation2008 + " Mio")
+
+console.log(ItPopulation2022 + " Mio")
+console.log(ItPopulation2022 / EuPopulation2022 * 100 + " %")
+console.log((ItPopulation2022 - ItPopulation2008) / ItPopulation2008 *100 + " %")
+console.log(ItPopulation2022 - ItPopulation2008 + " Mio")
+
+console.log(FrPopulation2022 + " Mio")
+console.log(FrPopulation2022 / EuPopulation2022 * 100 + " %")
+console.log((FrPopulation2022 - FrPopulation2008) / FrPopulation2008 *100 + " %")
+console.log(FrPopulation2022 - FrPopulation2008 + " Mio")
+
+console.log(SpPopulation2022 + " Mio")
+console.log(SpPopulation2022 / EuPopulation2022 * 100 + " %")
+console.log((SpPopulation2022 - SpPopulation2008) / SpPopulation2008 *100 + " %")
+console.log(SpPopulation2022 - SpPopulation2008 + " Mio")
