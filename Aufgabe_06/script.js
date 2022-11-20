@@ -36,16 +36,4 @@ let ErgebnisSp2 = ((SpPopulation2022 - SpPopulation2008) / SpPopulation2008) * 1
 console.log("Die Wachstumsrate in Spanien seit 2008 liegt bei " + ErgebnisSp2 + " %");
 let ErgebnisSp3 = SpPopulation2022 - SpPopulation2008;
 console.log("Die gesamte Wachstumsrate seit 2008 bis 2022 liegt bei " + ErgebnisSp3 + " Mio");
-console.log(ItPopulation2022 + " Mio");
-console.log(ItPopulation2022 / EuPopulation2022 * 100 + " %");
-console.log((ItPopulation2022 - ItPopulation2008) / ItPopulation2008 * 100 + " %");
-console.log(ItPopulation2022 - ItPopulation2008 + " Mio");
-console.log(FrPopulation2022 + " Mio");
-console.log(FrPopulation2022 / EuPopulation2022 * 100 + " %");
-console.log((FrPopulation2022 - FrPopulation2008) / FrPopulation2008 * 100 + " %");
-console.log(FrPopulation2022 - FrPopulation2008 + " Mio");
-console.log(SpPopulation2022 + " Mio");
-console.log(SpPopulation2022 / EuPopulation2022 * 100 + " %");
-console.log((SpPopulation2022 - SpPopulation2008) / SpPopulation2008 * 100 + " %");
-console.log(SpPopulation2022 - SpPopulation2008 + " Mio");
 //# sourceMappingURL=script.js.map
