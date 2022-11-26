@@ -84,7 +84,6 @@ const Land = document.querySelector("#Land")
 const Land2 = document.querySelector("#Land2")
 
 
-
 DeImg.addEventListener("click",function(){
     Einwohnerzahl.innerHTML = DePopulation2022 + " Mio"
     Relativ.innerHTML = ErgebnisDe + " %"
@@ -94,7 +93,9 @@ DeImg.addEventListener("click",function(){
     Land2.innerHTML = "Gesamtzahl Einwohner und Einwohnerinnen in Deutschland"
     
 
+    
 })
+
 const ItImg = document.querySelector("#Italien")
 ItImg.addEventListener("click",function(){
     Einwohnerzahl.innerHTML = ItPopulation2022 + " Mio"
@@ -103,8 +104,9 @@ ItImg.addEventListener("click",function(){
     WachstumP.innerHTML = ErgebnisIt3 + " Mio"
     Land.innerHTML = "Einwohnerzahl in Italien"
     Land2.innerHTML = "Gesamtzahl Einwohner und Einwohnerinnen in Italien"
-   
+     
 })
+
 const SpImg = document.querySelector("#Spanien")
 SpImg.addEventListener("click",function(){
     Einwohnerzahl.innerHTML = SpPopulation2022 + " Mio"
@@ -135,7 +137,7 @@ EuImg.addEventListener("click",function(){
     WachstumP.innerHTML = ErgebnisEu3 + " Mio"
     Land.innerHTML = "Einwohnerzahl in der EU"
     Land2.innerHTML = "Gesamtzahl Einwohner und Einwohnerinnen in der EU"
-   
+    
     
 })
 

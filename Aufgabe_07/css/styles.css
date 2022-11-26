@@ -51,11 +51,10 @@ footer p {
     background: #ffffff80;
     margin-left: 50px;
 }
-.chartWrapper #chart {
+.chartWrapper .chart {
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 75%;
     background: #ffcc00;
 }
-
