@@ -83,7 +83,6 @@ const WachstumP = document.querySelector("#WachstumP")
 const Land = document.querySelector("#Land")
 const Land2 = document.querySelector("#Land2")
 
-
 DeImg.addEventListener("click",function(){
     Einwohnerzahl.innerHTML = DePopulation2022 + " Mio"
     Relativ.innerHTML = ErgebnisDe + " %"
@@ -91,8 +90,6 @@ DeImg.addEventListener("click",function(){
     WachstumP.innerHTML = ErgebnisDe3 + " Mio"
     Land.innerHTML = "Einwohnerzahl in Deutschland"
     Land2.innerHTML = "Gesamtzahl Einwohner und Einwohnerinnen in Deutschland"
-    
-
     
 })
 
@@ -137,6 +134,8 @@ EuImg.addEventListener("click",function(){
     WachstumP.innerHTML = ErgebnisEu3 + " Mio"
     Land.innerHTML = "Einwohnerzahl in der EU"
     Land2.innerHTML = "Gesamtzahl Einwohner und Einwohnerinnen in der EU"
+    
+  
     
     
 })
