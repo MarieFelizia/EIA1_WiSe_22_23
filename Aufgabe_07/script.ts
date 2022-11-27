@@ -82,7 +82,7 @@ const Wachstumsrate = document.querySelector("#Wachstumsrate")
 const WachstumP = document.querySelector("#WachstumP")
 const Land = document.querySelector("#Land")
 const Land2 = document.querySelector("#Land2")
-
+const chart = document.querySelector(".chart")
 
 
 DeImg.addEventListener("click",function(){
@@ -140,8 +140,6 @@ EuImg.addEventListener("click",function(){
     Land2.innerHTML = "Gesamtzahl Einwohner und Einwohnerinnen in der EU"
     document.querySelector(".chart").setAttribute("style", "height: 100%")
   
-    
-    
 })
 
 }

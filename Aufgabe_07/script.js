@@ -48,6 +48,7 @@ var A7;
     const WachstumP = document.querySelector("#WachstumP");
     const Land = document.querySelector("#Land");
     const Land2 = document.querySelector("#Land2");
+    const chart = document.querySelector(".chart");
     DeImg.addEventListener("click", function () {
         Einwohnerzahl.innerHTML = DePopulation2022 + " Mio";
         Relativ.innerHTML = ErgebnisDe + " %";
