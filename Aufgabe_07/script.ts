@@ -83,6 +83,8 @@ const WachstumP = document.querySelector("#WachstumP")
 const Land = document.querySelector("#Land")
 const Land2 = document.querySelector("#Land2")
 
+
+
 DeImg.addEventListener("click",function(){
     Einwohnerzahl.innerHTML = DePopulation2022 + " Mio"
     Relativ.innerHTML = ErgebnisDe + " %"
@@ -90,6 +92,8 @@ DeImg.addEventListener("click",function(){
     WachstumP.innerHTML = ErgebnisDe3 + " Mio"
     Land.innerHTML = "Einwohnerzahl in Deutschland"
     Land2.innerHTML = "Gesamtzahl Einwohner und Einwohnerinnen in Deutschland"
+    document.querySelector(".chart").setAttribute("style", "height: 19%")
+
     
 })
 
@@ -101,7 +105,7 @@ ItImg.addEventListener("click",function(){
     WachstumP.innerHTML = ErgebnisIt3 + " Mio"
     Land.innerHTML = "Einwohnerzahl in Italien"
     Land2.innerHTML = "Gesamtzahl Einwohner und Einwohnerinnen in Italien"
-     
+    document.querySelector(".chart").setAttribute("style", "height: 13%") 
 })
 
 const SpImg = document.querySelector("#Spanien")
@@ -112,7 +116,7 @@ SpImg.addEventListener("click",function(){
     WachstumP.innerHTML = ErgebnisSp3 + " Mio"
     Land.innerHTML = "Einwohnerzahl in Spanien"
     Land2.innerHTML = "Gesamtzahl Einwohner und Einwohnerinnen in Spanien"
-  
+    document.querySelector(".chart").setAttribute("style", "height: 11%")
 }) 
 
 const FrImg = document.querySelector("#Frankreich")
@@ -123,7 +127,7 @@ FrImg.addEventListener("click",function(){
     WachstumP.innerHTML = ErgebnisFr3 + " Mio"
     Land.innerHTML = "Einwohnerzahl in Frankreich"
     Land2.innerHTML = "Gesamtzahl Einwohner und Einwohnerinnen in Frankreich"
-    
+    document.querySelector(".chart").setAttribute("style", "height: 15%")
 }) 
 
 const EuImg = document.querySelector("#EU")
@@ -134,7 +138,7 @@ EuImg.addEventListener("click",function(){
     WachstumP.innerHTML = ErgebnisEu3 + " Mio"
     Land.innerHTML = "Einwohnerzahl in der EU"
     Land2.innerHTML = "Gesamtzahl Einwohner und Einwohnerinnen in der EU"
-    
+    document.querySelector(".chart").setAttribute("style", "height: 100%")
   
     
     
