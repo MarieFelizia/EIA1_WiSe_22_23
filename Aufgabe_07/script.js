@@ -55,7 +55,7 @@ var A7;
         WachstumP.innerHTML = ErgebnisDe3 + " Mio";
         Land.innerHTML = "Einwohnerzahl in Deutschland";
         Land2.innerHTML = "Gesamtzahl Einwohner und Einwohnerinnen in Deutschland";
-        document.querySelector(".chart").setAttribute("style", "height: 19%");
+        document.querySelector(".chart").setAttribute("style", "height:19%");
     });
     const ItImg = document.querySelector("#Italien");
     ItImg.addEventListener("click", function () {
