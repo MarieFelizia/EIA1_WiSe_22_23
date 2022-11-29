@@ -41,62 +41,48 @@ var A7;
     let ErgebnisEu = parseFloat((EuPopulation2022 / EuPopulation2022) * 100 + " %").toFixed(0);
     let ErgebnisEu2 = parseFloat((EuPopulation2022 - EuPopulation2008) / EuPopulation2008 * 100 + " %").toFixed(1);
     let ErgebnisEu3 = parseFloat(EuPopulation2022 - EuPopulation2008 + "Mio").toFixed(2);
+    function Funktion(Population2022, RelativEU, Prozentzahl, Differenz, Land) {
+        Einwohnerzahl.innerHTML = Population2022 + " Mio";
+        Relativ.innerHTML = RelativEU + " %";
+        Wachstumsrate.innerHTML = Prozentzahl + " %";
+        WachstumP.innerHTML = Differenz + " Mio";
+        Ort.innerHTML = "Einwohnerzahl in " + Land;
+        Wo.innerHTML = "Gesamtzahl Einwohner und Einwohnerinnen in " + Land;
+    }
+    function Balkendiagramm(Prozentnummer) {
+        document.querySelector(".chart").setAttribute("style", "height:" + Prozentnummer);
+    }
     const DeImg = document.querySelector("#Deutschland");
     const Einwohnerzahl = document.querySelector("#Einwohnerzahl");
     const Relativ = document.querySelector("#Relativ");
     const Wachstumsrate = document.querySelector("#Wachstumsrate");
     const WachstumP = document.querySelector("#WachstumP");
-    const Land = document.querySelector("#Land");
-    const Land2 = document.querySelector("#Land2");
+    const Ort = document.querySelector("#Land");
+    const Wo = document.querySelector("Wo");
     const chart = document.querySelector(".chart");
     DeImg.addEventListener("click", function () {
-        Einwohnerzahl.innerHTML = DePopulation2022 + " Mio";
-        Relativ.innerHTML = ErgebnisDe + " %";
-        Wachstumsrate.innerHTML = ErgebnisDe2 + " %";
-        WachstumP.innerHTML = ErgebnisDe3 + " Mio";
-        Land.innerHTML = "Einwohnerzahl in Deutschland";
-        Land2.innerHTML = "Gesamtzahl Einwohner und Einwohnerinnen in Deutschland";
-        document.querySelector(".chart").setAttribute("style", "height:19%");
+        Funktion(DePopulation2022, ErgebnisDe, ErgebnisDe2, ErgebnisDe3, "Deutschland");
+        Balkendiagramm(ErgebnisDe);
     });
     const ItImg = document.querySelector("#Italien");
     ItImg.addEventListener("click", function () {
-        Einwohnerzahl.innerHTML = ItPopulation2022 + " Mio";
-        Relativ.innerHTML = ErgebnisIt + " %";
-        Wachstumsrate.innerHTML = ErgebnisIt2 + " %";
-        WachstumP.innerHTML = ErgebnisIt3 + " Mio";
-        Land.innerHTML = "Einwohnerzahl in Italien";
-        Land2.innerHTML = "Gesamtzahl Einwohner und Einwohnerinnen in Italien";
-        document.querySelector(".chart").setAttribute("style", "height: 13%");
+        Funktion(ItPopulation2022, ErgebnisIt, ErgebnisIt2, ErgebnisIt3, "Italien");
+        Balkendiagramm(ErgebnisIt);
     });
     const SpImg = document.querySelector("#Spanien");
     SpImg.addEventListener("click", function () {
-        Einwohnerzahl.innerHTML = SpPopulation2022 + " Mio";
-        Relativ.innerHTML = ErgebnisSp + " %";
-        Wachstumsrate.innerHTML = ErgebnisSp2 + " %";
-        WachstumP.innerHTML = ErgebnisSp3 + " Mio";
-        Land.innerHTML = "Einwohnerzahl in Spanien";
-        Land2.innerHTML = "Gesamtzahl Einwohner und Einwohnerinnen in Spanien";
-        document.querySelector(".chart").setAttribute("style", "height: 11%");
+        Funktion(SpPopulation2022, ErgebnisSp, ErgebnisSp2, ErgebnisSp3, "Spanien");
+        Balkendiagramm(ErgebnisSp);
     });
     const FrImg = document.querySelector("#Frankreich");
     FrImg.addEventListener("click", function () {
-        Einwohnerzahl.innerHTML = FrPopulation2022 + " Mio";
-        Relativ.innerHTML = ErgebnisFr + " %";
-        Wachstumsrate.innerHTML = ErgebnisFr2 + " %";
-        WachstumP.innerHTML = ErgebnisFr3 + " Mio";
-        Land.innerHTML = "Einwohnerzahl in Frankreich";
-        Land2.innerHTML = "Gesamtzahl Einwohner und Einwohnerinnen in Frankreich";
-        document.querySelector(".chart").setAttribute("style", "height: 15%");
+        Funktion(FrPopulation2022, ErgebnisFr, ErgebnisFr2, ErgebnisFr3, "Frankreich");
+        Balkendiagramm(ErgebnisFr);
     });
     const EuImg = document.querySelector("#EU");
     EuImg.addEventListener("click", function () {
-        Einwohnerzahl.innerHTML = EuPopulation2022 + " Mio";
-        Relativ.innerHTML = ErgebnisEu + " %";
-        Wachstumsrate.innerHTML = ErgebnisEu2 + " %";
-        WachstumP.innerHTML = ErgebnisEu3 + " Mio";
-        Land.innerHTML = "Einwohnerzahl in der EU";
-        Land2.innerHTML = "Gesamtzahl Einwohner und Einwohnerinnen in der EU";
-        document.querySelector(".chart").setAttribute("style", "height: 100%");
+        Funktion(EuPopulation2022, ErgebnisEu, ErgebnisEu2, ErgebnisEu3, "EU");
+        Balkendiagramm(ErgebnisEu);
     });
 })(A7 || (A7 = {}));
 //# sourceMappingURL=script.js.map
