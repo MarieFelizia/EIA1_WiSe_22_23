@@ -77,16 +77,16 @@ let ErgebnisEu3: string = parseFloat (EuPopulation2022 - EuPopulation2008 + "Mio
 
 
 function Funktion (Population2022: number, RelativEU: string, Prozentzahl: string, Differenz: string, Land: string) { 
-    Einwohnerzahl.innerHTML = Population2022 + " Mio"
-    Relativ.innerHTML = RelativEU + " %"
-    Wachstumsrate.innerHTML = Prozentzahl + " %"
-    WachstumP.innerHTML = Differenz + " Mio"
-    Ort.innerHTML = "Einwohnerzahl in " + Land
+    Einwohnerzahl.innerHTML = Population2022 + " Mio";
+    Relativ.innerHTML = RelativEU + " %";
+    Wachstumsrate.innerHTML = Prozentzahl + " %";
+    WachstumP.innerHTML = Differenz + " Mio";
+    Ort.innerHTML = "Einwohnerzahl in " + Land;
     Wo.innerHTML = "Gesamtzahl Einwohner und Einwohnerinnen in " + Land
 }
 
 function Balkendiagramm (Prozentnummer: string){
-    document.querySelector(".chart").setAttribute("style", "height:" + Prozentnummer)
+    chart.setAttribute('style' , Prozentnummer)
 }
 
 const DeImg = document.querySelector("#Deutschland")
@@ -95,13 +95,13 @@ const Relativ = document.querySelector("#Relativ")
 const Wachstumsrate = document.querySelector("#Wachstumsrate")
 const WachstumP = document.querySelector("#WachstumP")
 const Ort = document.querySelector("#Land")
-const Wo = document.querySelector("Wo")
-const chart = document.querySelector(".chart")
+const Wo = document.querySelector("#Wo")
+const chart = document.querySelector('.chart')
 
 
 DeImg.addEventListener("click",function(){
     Funktion(DePopulation2022, ErgebnisDe, ErgebnisDe2, ErgebnisDe3, "Deutschland")
-    Balkendiagramm(ErgebnisDe)
+    Balkendiagramm('height: ' + ErgebnisDe + '%' ) 
     
 })
 

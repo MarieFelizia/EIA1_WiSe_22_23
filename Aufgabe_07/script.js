@@ -50,7 +50,7 @@ var A7;
         Wo.innerHTML = "Gesamtzahl Einwohner und Einwohnerinnen in " + Land;
     }
     function Balkendiagramm(Prozentnummer) {
-        document.querySelector(".chart").setAttribute("style", "height:" + Prozentnummer);
+        chart.setAttribute('style', Prozentnummer);
     }
     const DeImg = document.querySelector("#Deutschland");
     const Einwohnerzahl = document.querySelector("#Einwohnerzahl");
@@ -58,11 +58,11 @@ var A7;
     const Wachstumsrate = document.querySelector("#Wachstumsrate");
     const WachstumP = document.querySelector("#WachstumP");
     const Ort = document.querySelector("#Land");
-    const Wo = document.querySelector("Wo");
-    const chart = document.querySelector(".chart");
+    const Wo = document.querySelector("#Wo");
+    const chart = document.querySelector('.chart');
     DeImg.addEventListener("click", function () {
         Funktion(DePopulation2022, ErgebnisDe, ErgebnisDe2, ErgebnisDe3, "Deutschland");
-        Balkendiagramm(ErgebnisDe);
+        Balkendiagramm('height: ' + ErgebnisDe + '%');
     });
     const ItImg = document.querySelector("#Italien");
     ItImg.addEventListener("click", function () {
