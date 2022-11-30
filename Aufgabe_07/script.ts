@@ -82,7 +82,7 @@ function Funktion (Population2022: number, RelativEU: string, Prozentzahl: strin
     Wachstumsrate.innerHTML = Prozentzahl + " %";
     WachstumP.innerHTML = Differenz + " Mio";
     Ort.innerHTML = "Einwohnerzahl in " + Land;
-    Wo.innerHTML = "Gesamtzahl Einwohner und Einwohnerinnen in " + Land
+    Wo.innerHTML = "Gesamtzahl Einwohner und Einwohnerinnen in " + Ort
 }
 
 function Balkendiagramm (Prozentnummer: string){
@@ -94,7 +94,7 @@ const Einwohnerzahl = document.querySelector("#Einwohnerzahl")
 const Relativ = document.querySelector("#Relativ")
 const Wachstumsrate = document.querySelector("#Wachstumsrate")
 const WachstumP = document.querySelector("#WachstumP")
-const Ort = document.querySelector("#Land")
+const Ort = document.querySelector("#Ort")
 const Wo = document.querySelector("#Wo")
 const chart = document.querySelector('.chart')
 
@@ -108,25 +108,25 @@ DeImg.addEventListener("click",function(){
 const ItImg = document.querySelector("#Italien")
 ItImg.addEventListener("click",function(){
     Funktion(ItPopulation2022, ErgebnisIt, ErgebnisIt2, ErgebnisIt3, "Italien")
-    Balkendiagramm(ErgebnisIt)
+    Balkendiagramm('height: ' + ErgebnisIt + '%' )
 })
 
 const SpImg = document.querySelector("#Spanien")
 SpImg.addEventListener("click",function(){
     Funktion(SpPopulation2022, ErgebnisSp, ErgebnisSp2, ErgebnisSp3, "Spanien")
-    Balkendiagramm(ErgebnisSp)
+    Balkendiagramm('height: ' + ErgebnisSp + '%' )
 }) 
 
 const FrImg = document.querySelector("#Frankreich")
 FrImg.addEventListener("click",function(){
     Funktion(FrPopulation2022, ErgebnisFr, ErgebnisFr2, ErgebnisFr3, "Frankreich")
-    Balkendiagramm(ErgebnisFr)
+    Balkendiagramm('height: ' + ErgebnisFr + '%' )
 }) 
 
 const EuImg = document.querySelector("#EU")
 EuImg.addEventListener("click",function(){
     Funktion(EuPopulation2022, ErgebnisEu, ErgebnisEu2, ErgebnisEu3, "EU")
-    Balkendiagramm(ErgebnisEu)
+    Balkendiagramm('height: ' + ErgebnisEu + '%' )
   
 })
 
