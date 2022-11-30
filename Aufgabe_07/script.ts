@@ -82,7 +82,7 @@ function Funktion (Population2022: number, RelativEU: string, Prozentzahl: strin
     Wachstumsrate.innerHTML = Prozentzahl + " %";
     WachstumP.innerHTML = Differenz + " Mio";
     Ort.innerHTML = "Einwohnerzahl in " + Land;
-    Wo.innerHTML = "Gesamtzahl Einwohner und Einwohnerinnen in " + Land
+    Wo.innerHTML = "Gesamtzahl Einwohner und Einwohnerinnen in " + Land;
 }
 
 function Balkendiagramm (Prozentnummer: string){
