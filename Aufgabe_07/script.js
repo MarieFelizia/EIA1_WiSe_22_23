@@ -47,7 +47,7 @@ var A7;
         Wachstumsrate.innerHTML = Prozentzahl + " %";
         WachstumP.innerHTML = Differenz + " Mio";
         Ort.innerHTML = "Einwohnerzahl in " + Land;
-        Wo.innerHTML = "Gesamtzahl Einwohner und Einwohnerinnen in " + Ort;
+        Wo.innerHTML = "Gesamtzahl Einwohner und Einwohnerinnen in " + Land;
     }
     function Balkendiagramm(Prozentnummer) {
         chart.setAttribute('style', Prozentnummer);
