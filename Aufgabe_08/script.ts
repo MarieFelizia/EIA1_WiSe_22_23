@@ -11,6 +11,7 @@ const TonA = document.querySelector("#TonA")
 const TonBf = document.querySelector("#TonBf")
 const TonB = document.querySelector("#TonB")
 
+
 const soundC:HTMLAudioElement = new Audio('c.mp3')
 const soundDf:HTMLAudioElement = new Audio('df.mp3')
 const soundD:HTMLAudioElement = new Audio('d.mp3')
@@ -74,4 +75,17 @@ TonBf.addEventListener("click",function(){
 
 TonB.addEventListener("click",function(){
     playSample(soundB)
+})
+
+let Tonabfolge=  [soundC, soundD, soundE, soundF, soundG, soundA, soundB]
+
+const playButton= document.querySelector("#playButton")
+
+playButton.addEventListener("click", function(){ 
+    setInterval(function() {
+       for (let i = 0; i < Tonabfolge.length; i++) {
+        playSample(Tonabfolge[i])
+       }
+
+     }, 5000);
 })
