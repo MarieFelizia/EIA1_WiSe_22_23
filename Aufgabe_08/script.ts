@@ -77,7 +77,7 @@ TonB.addEventListener("click",function(){
     playSample(soundB)
 })
 
-let Tonabfolge=  [soundC, soundD, soundE, soundF, soundG, soundA, soundB]
+let Tonabfolge=  [soundC, soundD, soundE, soundF, soundG, soundA, soundB, soundC]
 
 const playButton= document.querySelector("#playButton")
 

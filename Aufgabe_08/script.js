@@ -61,7 +61,7 @@ TonBf.addEventListener("click", function () {
 TonB.addEventListener("click", function () {
     playSample(soundB);
 });
-let Tonabfolge = [soundC, soundD, soundE, soundF, soundG, soundA, soundB];
+let Tonabfolge = [soundC, soundD, soundE, soundF, soundG, soundA, soundB, soundC];
 const playButton = document.querySelector("#playButton");
 playButton.addEventListener("click", function () {
     setInterval(function () {
