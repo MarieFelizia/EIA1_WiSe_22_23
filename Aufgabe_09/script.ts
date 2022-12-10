@@ -1,6 +1,3 @@
-namespace A8 { 
-
-
 const TonC= document.querySelector("#TonC")
 const TonDf = document.querySelector("#TonDf")
 const TonD = document.querySelector("#TonD")
@@ -81,17 +78,50 @@ TonB.addEventListener("click",function(){
 })
 
 let Tonabfolge=  [soundC, soundD, soundE, soundF, soundG, soundA, soundB, soundC]
+let TonRemix=  [soundC, soundD, soundE, soundF, soundG, soundA, soundB, soundC]
 
-const playButton= document.querySelector("#playButton")
+let playButton = document.querySelector("#playButton") 
+let stopButton = document.querySelector("#stopButton")
+let remixButton = document.querySelector("#remixButton")
+let Intervall
+let counter = 0
 
-playButton.addEventListener("click", function(){ 
-    setInterval(function() {
-       for (let i = 0; i < Tonabfolge.length; i++) {
-        playSample(Tonabfolge[i])
-       }
 
-     }, 5000);
+ // playButton.addEventListener("click", function(){ 
+    // setInterval(function() {
+       // for (let i = 0; i < Tonabfolge.length; i++) {
+       //  playSample(Tonabfolge[i])
+      //  }
+
+    //  }, 5000);
+// }) 
+
+
+document.querySelector("#playButton").addEventListener('click', function(){
+    playButton.classList.add('is-hidden');
+    stopButton.classList.remove('is-hidden')
+    Intervall= setInterval(() =>{ 
+        for (let i = 0; i < Tonabfolge.length; i++) {
+            playSample(Tonabfolge[i])
+           }
+    
+         }, 1000);
+
+    })
+
+
+document.querySelector("#stopButton").addEventListener('click', function(){ 
+    stopButton.classList.add('is-hidden')
+    playButton.classList.remove('is-hidden')
+    clearInterval(Intervall)
+
 })
 
+document.querySelector("#remixButton").addEventListener('click', function(){ 
+    Tonabfolge = []
+while(Tonabfolge.length < 6) { 
+    let i = Math.floor(Math.random()*6)+1; 
+    Tonabfolge.push(TonRemix[i]);
+}    
 
-}
+})
