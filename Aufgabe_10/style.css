@@ -1,0 +1,36 @@
+body {margin-left: 20px; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px; 
+    font-weight: bold;
+    background-color: #9da6af;
+  }
+
+#inputText { 
+    width: 600px;
+    height: 60px;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+.wrapper{ 
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+.myClass {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  height: 60px;
+  width: 600px;
+  border-radius: 3px;
+  padding-top: 4px;
+  align-items: center;
+  
+}
+
+.invisible{ 
+  display: none;
+}
