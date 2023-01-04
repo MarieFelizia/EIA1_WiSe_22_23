@@ -26,14 +26,19 @@ let Todo: any []= [
     },
   
 ] 
+
+
 let addButton = document.querySelector("#addButton") as HTMLButtonElement
 addButton.addEventListener("click", function(){ 
     let neu = { 
         name: inputDOMElement.value,
         checked: false, };
+        if (inputDOMElement.value != "") 
         Todo.unshift(neu);
-    
+      
+        
 });
+
 
 /**
  * Die Anwendung wird immer wieder auf die selben
@@ -46,13 +51,15 @@ var inputDOMElement: HTMLInputElement;
 var addButtonDOMElement: HTMLElement;
 var todosDOMElement: HTMLElement;
 var counterDOMElement: HTMLElement;
+    
+
 
 /**
  * Sobald der DOM geladen wurde können grundlegende DOM-Interaktionen
  * initialisiert werden
  */
 window.addEventListener("load", function(): void {
-
+    
     /**
      * Jetzt da der DOM verfügbar ist können die wichtigsten Elemente
      * in ihre Variablen gespeichert werden, um später auf sie 
@@ -62,6 +69,8 @@ window.addEventListener("load", function(): void {
     addButtonDOMElement = document.querySelector("#addButton");
     todosDOMElement = document.querySelector("#todos");
     counterDOMElement = document.querySelector("#counter");
+        
+
 
     /**
      * Jetzt da der DOM verfügbar ist kann auch ein Event-Listener
@@ -127,6 +136,11 @@ function drawListToDOM(): void {
 function updateCounter(): void {
     counterDOMElement.innerHTML = Todo.length + " in total";
 }
+
+
+
+
+
 
 /**
  * Ein neues ToDo wird folgendermaßen erstellt:

@@ -25,7 +25,8 @@ addButton.addEventListener("click", function () {
         name: inputDOMElement.value,
         checked: false,
     };
-    Todo.unshift(neu);
+    if (inputDOMElement.value != "")
+        Todo.unshift(neu);
 });
 /**
  * Die Anwendung wird immer wieder auf die selben
