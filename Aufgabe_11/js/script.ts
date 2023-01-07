@@ -35,8 +35,8 @@ addButton.addEventListener("click", function(){
         checked: false, };
         if (inputDOMElement.value != "") 
         Todo.unshift(neu);
-      
         
+          
 });
 
 
@@ -51,7 +51,9 @@ var inputDOMElement: HTMLInputElement;
 var addButtonDOMElement: HTMLElement;
 var todosDOMElement: HTMLElement;
 var counterDOMElement: HTMLElement;
-    
+var doneDOMElement: HTMLElement;
+var openDOMElement: HTMLElement;
+
 
 
 /**
@@ -69,6 +71,9 @@ window.addEventListener("load", function(): void {
     addButtonDOMElement = document.querySelector("#addButton");
     todosDOMElement = document.querySelector("#todos");
     counterDOMElement = document.querySelector("#counter");
+    openDOMElement = document.querySelector("#open");
+    doneDOMElement = document.querySelector("#done");
+
         
 
 
@@ -89,6 +94,7 @@ function drawListToDOM(): void {
     // alle todos erst einmal aus dem DOM löschen
     todosDOMElement.innerHTML = "";
 
+
     // das ToDo-Array durchlaufen (iterieren) und Todo für Todo in den DOM schreiben
     for (let index: number = 0; index < Todo.length; index++) {
 
@@ -99,6 +105,7 @@ function drawListToDOM(): void {
          */
         let todo: HTMLElement = document.createElement("div");
         todo.classList.add("todo");
+        updateDone();
 
         /**
          * Jedes Todo besteht aus etwas Markup, also aus HTML-Elementen
@@ -119,6 +126,8 @@ function drawListToDOM(): void {
             // hier wird der Index, also die aktuelle Stelle im Array dieses ToDos,
             // übergeben, damit an der entsprechenden Stelle im Array der Wert geändert werden kann.
             toggleCheckState(index);
+            updateDone();
+            
         });
         todo.querySelector(".trash").addEventListener("click", function(): void {
             // hier wird der Index, also die aktuelle Stelle im Array dieses ToDos,
@@ -131,15 +140,25 @@ function drawListToDOM(): void {
     }
 
     updateCounter();
+    
+    
 }
 
 function updateCounter(): void {
     counterDOMElement.innerHTML = Todo.length + " in total";
+
 }
 
-
-
-
+function updateDone(): void { 
+    let Variable: number = 0
+    for (let index = 0; index < Todo.length; index++) 
+        if (Todo[index].checked == true){
+            Variable ++}
+            doneDOMElement.innerHTML = Variable + " done";
+    
+            let open: number = Todo.length - Variable
+            openDOMElement.innerHTML = open + " open";
+    }
 
 
 /**
@@ -171,6 +190,8 @@ function addTodo(): void {
          * wird wieder getriggert
          */
         drawListToDOM();
+        
+        
     }
 }
 
@@ -199,6 +220,7 @@ function toggleCheckState(index: number): void {
      * wird wieder getriggert
      */
     drawListToDOM();
+    
 }
 
 /**
@@ -219,4 +241,6 @@ function deleteTodo(index: number): void {
      * wird wieder getriggert
      */
     drawListToDOM();
+    
+
 }

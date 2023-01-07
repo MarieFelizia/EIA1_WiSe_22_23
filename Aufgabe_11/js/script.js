@@ -39,6 +39,8 @@ var inputDOMElement;
 var addButtonDOMElement;
 var todosDOMElement;
 var counterDOMElement;
+var doneDOMElement;
+var openDOMElement;
 /**
  * Sobald der DOM geladen wurde können grundlegende DOM-Interaktionen
  * initialisiert werden
@@ -53,6 +55,8 @@ window.addEventListener("load", function () {
     addButtonDOMElement = document.querySelector("#addButton");
     todosDOMElement = document.querySelector("#todos");
     counterDOMElement = document.querySelector("#counter");
+    openDOMElement = document.querySelector("#open");
+    doneDOMElement = document.querySelector("#done");
     /**
      * Jetzt da der DOM verfügbar ist kann auch ein Event-Listener
      * auf den AddToDo Button gesetzt werden.
@@ -75,6 +79,7 @@ function drawListToDOM() {
          */
         let todo = document.createElement("div");
         todo.classList.add("todo");
+        updateDone();
         /**
          * Jedes Todo besteht aus etwas Markup, also aus HTML-Elementen
          * wie der Check-Anzeige, dem ToDo-Text und dem Mülleimer
@@ -93,6 +98,7 @@ function drawListToDOM() {
             // hier wird der Index, also die aktuelle Stelle im Array dieses ToDos,
             // übergeben, damit an der entsprechenden Stelle im Array der Wert geändert werden kann.
             toggleCheckState(index);
+            updateDone();
         });
         todo.querySelector(".trash").addEventListener("click", function () {
             // hier wird der Index, also die aktuelle Stelle im Array dieses ToDos,
@@ -106,6 +112,16 @@ function drawListToDOM() {
 }
 function updateCounter() {
     counterDOMElement.innerHTML = Todo.length + " in total";
+}
+function updateDone() {
+    let Variable = 0;
+    for (let index = 0; index < Todo.length; index++)
+        if (Todo[index].checked == true) {
+            Variable++;
+        }
+    doneDOMElement.innerHTML = Variable + " done";
+    let open = Todo.length - Variable;
+    openDOMElement.innerHTML = open + " open";
 }
 /**
  * Ein neues ToDo wird folgendermaßen erstellt:
