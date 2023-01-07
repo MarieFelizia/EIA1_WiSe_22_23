@@ -19,7 +19,7 @@ interface Task {
     checked: boolean;
 }
 
-let Todo: any []= [
+let Todo: any[]= [
     { 
         name: "value",
         checked: false,
