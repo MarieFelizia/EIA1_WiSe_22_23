@@ -19,13 +19,8 @@ interface Task {
     checked: boolean;
 }
 
-let Todo: any[]= [
-    { 
-        name: "value",
-        checked: false,
-    },
+let Todo: any[]= []
   
-] 
 
 
 let addButton = document.querySelector("#addButton") as HTMLButtonElement

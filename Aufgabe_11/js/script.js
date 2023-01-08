@@ -13,12 +13,7 @@
  */
 //var todosText: string[] =       ["Lorem" , "Ipsum" , "Dolor"];
 //var todosChecked: boolean[] =    [true    , false   , false];
-let Todo = [
-    {
-        name: "value",
-        checked: false,
-    },
-];
+let Todo = [];
 let addButton = document.querySelector("#addButton");
 addButton.addEventListener("click", function () {
     let neu = {
