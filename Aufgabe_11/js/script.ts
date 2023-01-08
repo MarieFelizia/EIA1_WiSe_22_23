@@ -153,6 +153,7 @@ function updateDone(): void {
     
             let open: number = Todo.length - Variable
             openDOMElement.innerHTML = open + " open";
+            
     }
 
 
